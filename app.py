@@ -16,14 +16,14 @@ import os
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 # 로깅 설정
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s [%(levelname)s] %(message)s',
-    handlers=[
-        logging.StreamHandler(sys.stdout),  # 콘솔 출력
-        logging.FileHandler('app.log')     # 파일 저장
-    ]
-)
+# logging.basicConfig(
+#     level=logging.INFO,
+#     format='%(asctime)s [%(levelname)s] %(message)s',
+#     handlers=[
+#         logging.StreamHandler(sys.stdout),  # 콘솔 출력
+#         logging.FileHandler('app.log')     # 파일 저장
+#     ]
+# )
 
 app = Flask(__name__)
 CORS(app)

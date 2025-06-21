@@ -19,16 +19,8 @@ def check_meme_message(msg):
     elif "사고싶" in msg or "사야" in msg or "살까" in msg or "샀어" in msg:
         return random.choice(["축하합니다!!!", "그걸 샀네;;", "개부자;;", "와 샀네", "이걸 산다고?"])
 
-    elif "뭐먹" in msg or "머먹" in msg:
-        foods = ["돼지갈비!!", "황금볶음밥!!", "미역국!!",
-                 "닭갈비!!", "떡볶이!!", "돈까스!!", "치킨!!", "라면!!"]
-        return random.choice(foods)
-
     elif "배고파" in msg or "배고프" in msg:
         return random.choice(["돼지", "또 먹어?", "살쪄", "그만 먹어;;", "아까 먹었잖아"])
-
-    elif "졸려" in msg or "잠와" in msg or "피곤해" in msg:
-        return random.choice(["자라;;", "구라;;", "자야지;;", "자야겠다;;", "그만 좀 자라;;"])
 
     elif "멈춰" in msg:
         return "멈춰!!"
